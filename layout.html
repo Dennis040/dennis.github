@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>LayoutTest</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+        }
+        /*logo*/
+        #logodiv {
+            width: 95%;
+            min-height: 56px;
+            background-color: #cd1818;
+            color: #faeaea;
+            font-size: 30px;
+            padding-left: 5%;
+            line-height: 56px;
+            
+        }
+        /*nav ở logo*/
+        #logo-nav {
+            float: right;
+            color: whitesmoke;
+            font-size: 40px;
+            padding-right: 30px;
+        }
+
+        #navigation {
+            width: 95%;
+            min-height: 40px;
+            background-color: #252525;
+            padding-left: 5%;
+            text-align: center;
+            line-height: 40px;
+            
+        }
+
+        .ul-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            display: inline-block;
+            color: whitesmoke;
+        }
+
+            li.navi a {
+                display: inline-block;
+                padding-right: 30px;
+                font-size: 20px;
+                color: whitesmoke;
+                text-decoration: none;
+            }
+
+                li.navi a:hover {
+                    color: grey;
+                }
+
+        #banner {
+            width: 100%;
+            height: 100px;
+            background-color: lightgrey;
+            line-height: 100px;
+            text-align: center;
+        }
+        /*hàng*/
+        .row {
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgrey;
+            margin-top: 10px;
+        }
+        /*cột*/
+        .col {
+            width: 20%;
+            min-height: 100px;
+            background-color: grey;
+            float: left;
+        }
+        /*margin của item*/
+            .col:nth-child(2), .col:nth-child(3) {
+                margin-left: 5%;
+                margin-right: 5%
+            }
+            #footer{
+                width:100%;
+                min-height:130px;
+                background-color:lightgrey;
+                margin-top:10px;
+                text-align:center;
+                line-height:130px;
+
+            }
+    </style>
+</head>
+<body>
+    <div id="logodiv">
+        <!--img logo và header-->
+        <img src="FPT.png" width="151" height="56" />
+        <!--nav ở logo-->
+        <div id="logo-nav">
+            <ul>
+                <li class="navi"><a href="">Tài Khoản</a></li>
+                <li class="navi"><a href="">Giỏ hàng</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="navigation">
+
+        <ul class="ul-nav">
+            <li class="navi"> <a href="">Điện thoại</a></li>
+            <li class="navi"><a href="">Laptop</a></li>
+            <li class="navi"><a href="">Máy tính bảng</a></li>
+            <li class="navi"><a href="">Apple</a></li>
+            <li class="navi"><a href="">Linh kiện</a> </li>
+            <li class="navi"><a href="">Sim</a></li>
+            <li class="navi"><a href="">Khuyến mãi</a></li>
+        </ul>
+    </div>
+    <div id="banner">
+        Header/Banner
+    </div>
+    <div class="row">
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+    </div>
+    <div class="row">
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+    </div>
+    <div class="row">
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+        <div class="col">Item</div>
+    </div>
+
+    <div id="footer">
+        Footer
+    </div>
+
+</body>
+</html>
